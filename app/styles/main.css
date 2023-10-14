@@ -1,0 +1,1024 @@
+/* @font-face {
+    font-family: ReenieBeanie;
+    src: url(https://fonts.google.com/specimen/Reenie+Beanie);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(https://fonts.google.com/specimen/Roboto
+    );
+} */
+* {
+    
+    box-sizing: border-box;
+  }
+  body{
+    max-width: 425px;
+    box-sizing: border-box;
+  }
+  
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  p{
+    margin: 0;
+  }
+
+
+nav {
+    display: none   ;
+}
+
+
+.page {
+    display: none;
+}
+
+
+#navigation{
+    background-color: #FCEBD5;
+    height: 68px;
+border-radius: 0px;
+box-shadow: 0px 2px 2px 0px #00000040;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#navigationBar p {
+font-family: 'Reenie Beanie';
+font-style: normal;
+font-weight: 500;
+font-size: 45px;
+line-height: 30px;
+text-align: center;
+color: #A26A5E;
+}
+#auctionMenuBtn{
+  display: none;
+}
+
+#hammerIcon{
+    display: none;
+    width: 36px;
+    position: absolute;
+left: 86%;
+right: 3.87%;
+top: 1.86%;
+bottom: 8.33%;
+
+/* Primary/Default */
+
+
+}
+
+#navLogo{
+  display: none ;
+}
+
+#NavLogoImg{
+    width: 104px;
+    height: 104px;
+     display: none;
+     position: absolute;
+ left: 0%;
+ right: 81.4%;
+ top: -1%;
+ bottom: 21.15%;
+ overflow: visible;
+ background: transparent;
+
+ }
+ 
+
+#landingPage{
+    position: absolute;
+    width: 425px;
+    height: 830px;
+    top: 69px;
+    background-color: #FCEBD5;
+}
+
+#logo{
+    position: absolute;
+    left: 32.37%;
+right: 32.59%;
+top: 3%;
+bottom: 70.41%;
+  
+}
+
+#hamburgerIcon{
+  display: none;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  margin-top: 15px;
+  color: #A26A5E;
+}
+
+
+.artist{
+    
+    position: absolute;
+    width: 260px;
+    height: 276.5px;
+    left: 77px;
+    top: 200px;
+    
+    background: #EDD5BB;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
+        }
+
+        .artist:hover{
+            width: 273px;
+            height: 280px;
+            left: 70px;
+            top: 200px;   
+        }
+    
+    #artists{
+        position: absolute;
+        top: 110px;
+        left: 136px;
+        width: 100px;
+        background-color: transparent;
+        border: 1px solid #A26A5E;
+    border-radius: 2px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 15px;
+    color: #A26A5E;
+    mix-blend-mode: normal;
+    }
+
+    
+.visitor{
+    position: absolute;
+    width: 260px;
+    height: 276.5px;
+    left: 77px;
+    top: 310px;
+    background: #A26A5E;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 40%);
+    transform: rotate(180deg);
+    
+    }
+
+    .visitor:hover{
+        width: 273px;
+        height: 280px;
+        left: 70px;
+        top: 305px; 
+    }
+    
+    .artist p{
+        position: absolute;
+        width: 214px;
+        height: 46px;
+        left: 32px;
+        top: 42px;        
+        font-family: 'Reenie Beanie';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 45px;
+        line-height: 45px;
+        display: flex;
+        align-items: center;
+        text-align: right;        
+        color: #A26A5E;        
+        mix-blend-mode: normal; 
+    }
+    
+    
+    .visitor p {
+    position: absolute;
+    width: 210px;
+    height: 45px;
+    left: 30px;
+    top: 43px;
+    font-family: 'Reenie Beanie';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #FCEBD5;
+    mix-blend-mode: normal;
+    transform: rotate(180deg);
+    
+    }
+    
+    #visitorListingContainer    {
+        background: #EDD5BB;
+        mix-blend-mode: normal;   
+     }
+
+    .card{
+        margin-top: 37px;
+        margin-bottom: 37px;
+    }
+
+    .card:nth-of-type(odd) {
+        color: #A26A5E;
+        background-color: #FCEBD5;
+    }
+    .card:nth-of-type(odd) .btn-properties{
+        color:  #FCEBD5;
+        background-color:#A26A5E;
+    }
+    
+    
+    
+    .card:nth-of-type(even) {
+        color:  #FCEBD5;
+        background-color:#A26A5E;
+    }
+    .card:nth-of-type(even) .btn-properties{
+        color: #A26A5E;
+        background-color: #FCEBD5;
+    }
+
+    
+    .card-artist{
+        font-family: 'Reenie Beanie';
+        font-size: 35px;
+        line-height: 30px;
+        font-weight: 500;
+        padding-bottom: 7px;
+    }
+    .card-title-styles{
+        
+       font-family: 'Roboto';
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 16px;
+        letter-spacing: 0em;
+        text-align: left;
+
+    }
+    .card-text-style{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 13px;
+       
+    }
+    .btn-properties{
+        position: absolute;
+        top: 170px;
+        left: 340px;
+        border: none;
+    }
+
+    .filterBtn{
+        
+        position: fixed;
+        bottom: 13px;
+        left: 345px;
+        background-color: #D54C2E;
+        width: 65px;
+        height: 67px;
+        box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.25);
+        border-radius: 2px;
+    }
+
+
+    .vertical-line{
+        position: fixed;
+        border: 3px solid#FCEBD5;
+        height: 43px;
+        top: 768px;
+    }
+    .line1-position {
+        left: 356px;
+    }
+   
+    .line2-position{
+        left: 374px;
+    }
+   .line3-position{
+         left: 394px;
+   }
+   .horizontal-line{
+    position: fixed;
+    border: 3px solid#FCEBD5;
+    width: 13px;
+    
+   }
+
+   .vertical1-position{
+    left: 352px;
+    top: 798px;
+   }
+   .vertical2-position{
+    left: 370px;
+    top: 777px;
+   }
+   .vertical3-position{
+    left: 390px;
+    top: 788px;
+   }
+
+   #filterPage{
+    display: hide;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #A26A5E;
+    width: 100%;
+    height: 100vh;
+    padding: 20px;
+    transform: translateX(100%);
+  transition: transform 0.3s ease-out;
+   }
+   #filterPage.show {
+    transform: translateX(0);
+  }
+  .fa-x{
+  font-size: 50px;
+  position: absolute;
+  top: 35px;
+  right: 35px;
+    color:  #FCEBD5;
+  }
+
+.filter-heading{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 35px;
+line-height: 35px;
+color: #FCEBD5;
+padding-bottom: 30px;
+padding-top: 20px;
+}
+
+.filter-subheadings{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 21px;
+color: #EDD5BB;
+mix-blend-mode: normal;
+padding-bottom: 20px;
+padding-top: 20px;
+}
+
+
+
+#minPrice{
+    width: 100px !important;
+    margin-right: 40px;
+}
+
+
+
+#maxPrice{
+    width: 100px !important;
+}
+.inputs-styles{
+    background-color: transparent;
+    border: 1px solid   #EDD5BB;
+    color: #EDD5BB;
+    width: 120px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
+.inputs-styles::placeholder{
+    color:  #EDD5BB;
+    padding-left: 5px;
+}
+.type-style{
+    margin-top: 25px;
+}
+
+.filter-form div{
+    border-bottom: 2px solid #FCEBD5;
+    margin-bottom: 10px;
+}
+
+.filter-checked{
+    margin: 10px 10px;
+}
+
+#visitorHeader{
+    background-image: url(/project-js/images/Clipboard\ -\ April\ 21\,\ 2023\ 1_22\ PM.png);
+    height: 142px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.visitor-home-title{
+    padding-left: 15px;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+color: #A26A5E;
+mix-blend-mode: normal;
+}
+
+.btn-masterpiece{
+    width: 113px;
+    height: 30px;
+    text-decoration: none;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    padding: 7px 16px;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 2px;
+    color:  #FCEBD5 !important;
+    background-color:#A26A5E;
+    margin-right: 15px;
+}
+
+.btn-masterpiece:hover{
+    color:#FCEBD5;  
+}
+.slide-loop_wrap {
+    display: flex;
+  }
+  .section-slide {
+    overflow: hidden;
+    background-color: #C9BEB2;
+    height: 350px;
+    padding-top: 15px;
+  }
+  .slide-loop_wrap-left {
+    animation: infinity-scroll-left 30.0s infinite linear 0.2s both;
+    animation-play-state: running;
+  }
+  .slide-loop_wrap-right {
+    animation: infinity-scroll-right 30.0s infinite linear 0.2s both;
+    animation-play-state: running;
+  }
+  .section-slide:hover .slide-loop_wrap-left,
+.section-slide:hover .slide-loop_wrap-right {
+  animation-play-state: paused;
+}
+  
+  @keyframes infinity-scroll-left {
+    from {
+      transform: translateX(10%);
+    }
+    to {
+      transform: translateX(-1000%);
+    }
+  }
+  @keyframes infinity-scroll-right {
+    from {
+      transform: translateX(-1000%);
+    }
+    to {
+      transform: translateX(200%);
+    }
+  }
+  
+  div .slide-loop_itemImage {
+    cursor: pointer;
+    height: 130px;
+    min-width:200px;
+    margin: 15px;
+    padding: 0px;
+  }
+  
+  .primary, .secondary {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 7px 5px 15px 0px #999999;
+  }
+
+.slide-wrapper{
+    position: relative;
+    overflow: hidden;
+}
+.slides-container{
+    width: 100%;
+  display: flex;
+  overflow: scroll;
+  padding: 40px;
+  scroll-behavior: smooth;
+ 
+}
+.slide {
+    display:none;
+
+}
+.active{
+    display: flex !important;
+}
+  .slide-class{
+    display: flex !important;
+   flex: 50% !important;
+  }
+
+
+  .col-properties{
+    padding: 35px;
+    border-right: 1px solid #A26A5E;
+    
+  }
+  .slide1 {
+    border-right: 2px solid #A26A5E;
+    padding-bottom: 20px;
+  }
+  .slide2{
+    width: 100%;
+    
+  }
+  .carousel-p{
+   width: 60%;
+    background-color: #A26A5E;
+    padding-left: 10px;
+    padding-right: 10px;
+   
+    padding-top: 35px;
+    text-align: center;
+    font-size: 12px;
+    font-family: 'Roboto';
+    color: #f8f8f8;
+    font-style: normal;
+font-weight: 400;
+margin: 0 auto;
+margin-top: 30px;
+  }
+
+  .carousel-p-right{
+    width: 100%;
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+text-align: center;
+color: #A26A5E;
+padding-left: 15px;
+padding-right: 15px;
+padding-bottom: 10px;
+padding-top: 33px;
+  }
+  
+
+  .caoursel-img{
+    position: absolute;
+    bottom: 160px;
+    left: 100px;
+    border-radius: 50%;
+    border: 3px solid  #A26A5E;
+    width: 50px;
+  }
+
+  #slide-arrow-prev{
+    position: absolute;
+    bottom: 95px;
+    left: 20px;
+  }
+  #slide-arrow-next{
+    position: absolute;
+    right: 20px;
+    bottom: 95px;
+  }
+
+  .items-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .total-grid{
+background-color: #A26A5E;
+border: 2px;
+padding: 5px;
+margin-top: 20px;
+margin-bottom: 20px;
+width: 180px;
+  }
+
+  .total-grid .filter-subheadings{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+  }
+
+  .total-grid-numbers{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 40px;
+line-height: 56px;
+text-align: center;
+color: #FCEBD5;
+  }
+  
+  .live-auction{
+    width: 92.5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+   margin: 0 auto;
+   background-color: #D54C2E;
+border-radius: 2px;
+margin-bottom: 20px;
+  }
+
+  #chartControls{
+    position: absolute; 
+    background-color: #FCEBD5;
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .income-paragraph{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 21px;
+color: #A26A5E;
+padding-bottom: 10px;
+
+
+  }
+
+  #last7, #last30{
+    background-color: #A26A5E;
+border: 1px solid #A26A5E;
+width: 33.333%;
+border-radius: 2px;
+padding-top: 5px;
+padding-bottom: 5px;
+color: #FCEBD5;
+  }
+
+  #last14{
+    background-color:#D54C2E;
+    border: 1px solid #D54C2E;
+    width: 33.333%;
+    border-radius: 2px;
+    margin-left: 20px;
+margin-right: 20px;
+color: #FCEBD5;
+  }
+
+  #myChart{
+    height: 300px !important;
+    width: fit-content;
+  }
+
+  #dropDownMenu {
+    display: none;
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    background: #A26A5E;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #dropDownMenu a {
+    font-style: none;
+    font-size: 28px;
+    color: #EDD5BB;
+    text-align: center;
+  }
+
+  #artistItemsPage{
+    background-color: #EDD5BB;
+  }
+
+  #addNewItem{
+  background-color: #EDD5BB;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+  .newItemDiv {
+    padding: 20px 20px;
+    background-color: #FCEBD5;
+  }
+
+  .newItemParagraph {
+    text-align: center;
+    border: 2px dashed #A26A5E;
+   padding: 30px;
+   color: #A26A5E;
+  }
+
+  #addNewItemContainer{
+    padding-top: 30px;
+    background-color: #EDD5BB;
+  }
+
+
+  #artistsItemsCardsDiv{
+    background-color:#EDD5BB;
+  }
+  .artistItemCard{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    color: #A26A5E;
+        background-color: #FCEBD5;
+    border-radius: 2px;
+    margin-top: 30px;
+        margin-bottom: 30px;
+  }
+
+  .artistItemDate{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 11px;
+color: #E09686;
+padding-bottom: 0px;
+  }
+
+  .artistItemCardPrice {
+    position: relative;
+    top: -34px;
+    left: 350px;
+    border: none;
+    color:  #FCEBD5;
+    background-color:#A26A5E;
+    border-radius: 2px;
+    border: transparent;
+    padding: 3px;
+    margin-top: 0px;
+  }
+  .item-btn-properties span{
+    font-size: 15px;
+  }
+
+  
+  
+  .artistItemCardBtnDiv{
+    background-color: #A26A5E;
+    
+    align-items: center;
+    
+    padding: 10px;
+
+  } 
+  .artistItemCardBtnDiv button{
+    border-radius: 2px;
+    padding: 8px 16px;
+    font-family: 'Roboto';
+font-style: normal;
+font-size: 15px;
+line-height: 14px;
+  }
+  .sendToAuctionBtn{
+    background-color: #1B59AC;
+    color: white;
+  }
+  .artistItemCardUnpublishBtn{
+    background-color:  #1BAC6F;
+    color: white;
+  }
+
+  .artistItemCardRemoveBtn{
+    background-color: #D54C2E;
+    color: white;
+  }
+
+ 
+  
+  .artistItemCardEditBtn{
+    background-color: #FCEBD5;
+    color: #A26A5E;
+  }
+
+  #addNewItemPage{
+    display: none;
+  }
+
+  #addNewItemDiv{
+    display: none;
+    background-color: #A26A5E;
+    height: 100%;
+    color: #FCEBD5;
+   padding: 30px 15px;
+  }
+
+  .addNewItemParagraph{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 500;
+font-size: 30px;
+line-height: 35px;
+
+padding-bottom: 30px;
+  }
+
+  .addItemTextSpec{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 300;
+font-size: 18px;
+line-height: 21px;
+color: #EDD5BB;
+  }
+.borderInputs{
+  border: 1px solid  #EDD5BB;
+  border-radius: 2px;
+}
+
+.paddingDiv{
+
+  padding-bottom: 30px;
+  padding-right: 15px;
+}
+
+#addInputType{
+  width: 200px;
+  height: 27px;
+}
+#addNewItemCameraDiv{
+width: 100%;
+}
+.addNewItemCameraDivOuter{
+  width: 100%;
+  height: 350px;
+  border: 2px dashed #EDD5BB;
+  padding: 50px;
+}
+#addNewItemBtn{
+  background: #D54C2E;
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.25);
+border-radius: 2px;
+color: #FCEBD5;
+border: 1px solid  #D54C2E;
+padding: 5px 40px;
+
+
+}
+
+#addNewItemCloseBtn{
+  padding: 5px 60px;
+}
+
+#NewCameraDiv{
+  display: none;
+  background-color: #A26A5E;
+  height: 100vh;
+  padding-left: 10px;
+}
+
+#captureImageBtn{
+  color: #EDD5BB;
+ font-size: 3rem;
+}
+
+#liveCaptureCanvas{
+  display: none;
+  width: 400px;
+  
+  padding-top: 40px;
+ 
+}
+
+.fa-trash-can{
+  position: absolute;
+  top: 150px;
+  right: 50px;
+  color: red;
+}
+#addImageToItemPage{
+  display: none;
+  position: absolute;
+  top: 460px;
+  left: 160px;
+  background-color: rgba(71, 202, 71, 0.914);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+#capturedImage{
+  width: 100%;
+}
+
+#auctionPage img {
+  width: 100%;
+}
+
+#auctionPage h2 {
+  color: white;
+  background-color: #D54C2E;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-top: 20px;
+
+}
+#auctionCardDiv{
+  padding: 20px;
+  
+}
+#timer{
+  font-size: 30px;
+  background-color: #A26A5E;
+  padding: 15px;
+  color:#FCEBD5;
+  text-align: center;
+}
+#aucTitle{
+  padding-left: 10px;
+  font-weight: 600;
+  padding-top: 10px;
+  color: #A26A5E;
+}
+.bidding h3{
+  color: #A26A5E;
+  font-weight: bold;
+}
+
+#biddingInput{
+  background-color: #A26A5E;
+  padding: 15px;
+  color:#FCEBD5;
+  text-align: center;
+  font-size: 35px;
+  font-weight: 500;
+  color: #FCEBD5;
+}
+#biddingInput::placeholder{
+  color: rgb(54, 255, 64);
+}
+
+#auctionBidBtn{
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 15px;
+  background-color: #D54C2E;
+  color: white;
+  font-size: 30px;
+}
+
+#auctionHistoryUl li {
+  padding-top: 10px;
+  font-size: 20px;
+  color: #D54C2E;
+  font-weight: 500;
+}
+
+.backToHomePageBtn{
+  display: none;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  background-color: #D54C2E;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 60%;
+  color: white;
+}
+
+#auctionNoLiveCardDiv div {
+  border: 2px solid #D54C2E;
+  text-align: center;
+  border-radius: 5px;
+  background-color: #D54C2E;
+  color: #EDD5BB;
+}
+
+#fa-house{
+  display: none;
+  font-size: 25px;
+  color: #A26A5E;
+    width: 36px;
+    position: absolute;
+left: 88%;
+right: 3.87%;
+top: 1.86%;
+bottom: 8.33%;
+
+}
+
+#auctionLivePrice{
+  text-align: center;
+  color: #D54C2E;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#auctionCardInfoDiv h2 {
+  color: #EDD5BB;
+}
+#auctionCardInfoDiv p {
+  color: #A26A5E;
+  padding-top: 10px;
+}

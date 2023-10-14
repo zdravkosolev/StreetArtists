@@ -1,0 +1,1 @@
+This Project is mobile application for StreetArtists. In this project we need to work and learn how to use JavaScript. We need to make a two side page, one for the User login and the other page for the Visitor. There were many hard times doing the work but there is only one way to succeed.
