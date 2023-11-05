@@ -8,11 +8,11 @@
     );
 } */
 * {
-    
+  max-width: 425px !important ; 
     box-sizing: border-box;
   }
   body{
-    max-width: 425px;
+    max-width: 425px !important ;
     box-sizing: border-box;
   }
   
@@ -63,13 +63,10 @@ color: #A26A5E;
     display: none;
     width: 36px;
     position: absolute;
-left: 86%;
+left: 370px;
 right: 3.87%;
 top: 1.86%;
 bottom: 8.33%;
-
-/* Primary/Default */
-
 
 }
 
@@ -113,7 +110,7 @@ bottom: 70.41%;
   display: none;
   position: absolute;
   top: 15px;
-  right: 15px;
+  left: 370px;;
   margin-top: 15px;
   color: #A26A5E;
 }

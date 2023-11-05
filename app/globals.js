@@ -34,7 +34,8 @@ const hamburgerMenu = document.querySelector("#hamburgerIcon"),
             hamburgerMenu.style.display = "none";
             imgLogoTag.style.display = "block";
             headerTtitle.innerText = "Street ARTist";
-            hammerIconMain.style.display = "block"
+            hammerIconMain.style.display = "flex";
+            
         };
 
         export const artistHeader = () => {
@@ -43,7 +44,7 @@ const hamburgerMenu = document.querySelector("#hamburgerIcon"),
                 imgLogoTag.href = "#artist"
             }
             headerTtitle.innerText = getCurrentArtist()
-            hamburgerMenu.style.display = "block"
+            hamburgerMenu.style.display = "flex"
 
             
         }
